@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Tumbuhan;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller as Controller;
 
 class TumbuhanController extends Controller
 {
@@ -65,7 +66,7 @@ class TumbuhanController extends Controller
         $tanamanObat->save();
         // Tempat::create($validateData);
 
-        return redirect()->route('admin.tumbuhan.index')->with('success', 'Data tumbuhan berhasil ditambah');
+        return redirect()->route('admin.tumbuhan.index')->with('success', 'Data tanaman berhasil ditambahkan');
     }
 
     /**
@@ -119,7 +120,7 @@ class TumbuhanController extends Controller
             $tumbuhanObat->update(['gambar' => $nama_file]);
         }
 
-        return redirect()->route('admin.tumbuhan.index')->with('success', 'Data tempat berhasil diupdate');
+        return redirect()->route('admin.tumbuhan.index')->with('success', 'Data tanaman berhasil diperbaruhi');
 
     }
 
@@ -130,6 +131,6 @@ class TumbuhanController extends Controller
     {
         //
         Tumbuhan::where('id', $id)->delete();
-        return redirect()->route('admin.tumbuhan.index')->with('success', 'Data tempat berhasil dihapus');
+        return redirect()->route('admin.tumbuhan.index')->with('success', 'Data tanaman berhasil dihapus');
     }
 }
