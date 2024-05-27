@@ -35,7 +35,7 @@
         </div>
       </div>
 
-      <div class="row row-cards row-deck">
+      {{-- <div class="row row-cards row-deck">
         <div class="col-lg-6">
           <div class="card card-aside">
             <a href="#" class="card-aside-column" style="background-image: url(./demo/photos/david-klaasen-54203-500.jpg)"></a>
@@ -74,7 +74,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
 
     </div>
   </div>
