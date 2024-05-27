@@ -22,10 +22,10 @@ class UserController
 
     public function showTumbuhan()
     {
-        $tumbuhanObat = Tumbuhan::get();
+        $tanamanObat = Tumbuhan::get();
 
         return view('products', [
-            'tumbuhanObat' => $tumbuhanObat
+            'tanamanObat' => $tanamanObat
         ]);
     }
 
@@ -57,20 +57,27 @@ class UserController
     public function search(Request $request)
     {
         $keyword = $request->input('cariNama');
+        $all = Tumbuhan::get();
+
+
         $tanamanObat = Tumbuhan::where('nama', 'like', "%" . $keyword . "%")->get();
-
-        // return response()->json($tanamanObat);
-
         if ($tanamanObat->isEmpty()) {
             return view("products", [
-                'message' => 'Tidak ada yang sesuai dengan pencarian'
+                'message' => 'Tidak ada yang sesuai dengan pencarian',
+                'all' => $all
             ]);
-        }
-        else {
+        } elseif ($tanamanObat->isNotEmpty()){
             return view('products', [
-                'tanamanObat' => $tanamanObat
+                'tanamanObat' => $tanamanObat,
+                // 'all' => $all
             ]);
+        } else {
+            return view('products', ['all' => $all]); // Corrected syntax here
+            // return response()->json($all);
         }
+
+
+        
     }
 
     /**

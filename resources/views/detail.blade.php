@@ -3,9 +3,25 @@
 <section class="py-5">
     <div class="bg-holder" style="background-image:url(../assets/img/hero-bg.png);background-position:bottom;background-size:cover;"></div>
     <div class="container position-relative">
-        <a href="/" class="btn btn-success my-2 my-sm-0 rounded-pill" role="button" style="background-image: linear-gradient(to right, #07441e, #199472)">Beranda</a>
-        <a href="/products" class="btn btn-success my-2 my-sm-0 rounded-pill" role="button">Halaman Sebelumnya</a>
-        <div class="pt-4">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 border-bottom backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="/">
+                    <img src="../assets/img/icon.png" height="35">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+                        <li class="nav-item"><a class="nav-link fw-medium"
+                                aria-current="page" href="/">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link fw-medium" href="/products">Tanaman Obat</a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="pt-8">
             <h1 class="mb-4 display-3 fw-bold lh-sm">Detail Tanaman <br> {{ $tumbuhan[0]->nama }} </h1>
             <p class="mt-3 mb-4 fs-1 text-justify">Berikut merupakan informasi terkait tanaman Kalimantan Timur yaitu {{ $tumbuhan[0]->nama }}. Mari kita jaga dan lestarikan keanekaragaman hayati dengan penuh kepedulian dan tanggung jawab</p>
         </div>

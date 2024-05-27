@@ -18,7 +18,8 @@ class Tumbuhan extends Model
         'famili',
         'kegunaan',
         'deskripsi',
-        'gambar'
+        'gambar',
+        'habitat_id'
     ];
 
     public function user()

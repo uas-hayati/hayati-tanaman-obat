@@ -15,6 +15,7 @@
   </head>
   <body>
     <main class="main" id="top">
+      
         <!-- Content -->
         @yield('content')
         <!-- Content -->
@@ -36,3 +37,4 @@
   </body>
 
 </html>
+ 

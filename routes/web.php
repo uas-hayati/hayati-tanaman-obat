@@ -47,5 +47,8 @@ Route::get('/', [UserController::class,'index']);
 Route::get('/products', [UserController::class,'showTumbuhan']);
 // halaman detail tumbuhan obat
 Route::get('/product-detail/{id}', [UserController::class,'showDetail']);
+//proses pencarian
+Route::post('/products', [UserController::class,'search']);
+
 
 

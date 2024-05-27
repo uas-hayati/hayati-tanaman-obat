@@ -9,6 +9,7 @@
       <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
           <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium active" aria-current="page" href="#home">Beranda</a></li>
+          <li class="nav-item" ><a class="nav-link fw-medium"  href="/products">Tanaman Obat</a></li>
           <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="#about">Tentang Kami</a></li>
           <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="#faq">FAQ</a></li>
         </ul>
