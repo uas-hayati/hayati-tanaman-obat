@@ -17,7 +17,7 @@
                             <li class="nav-item"><a class="nav-link fw-medium"
                                     aria-current="page" href="/">Beranda</a></li>
                             <li class="nav-item"><a class="nav-link fw-medium" href="/products">Tanaman Obat</a></li>
-                          
+
                         </ul>
                     </div>
                 </div>
@@ -26,9 +26,6 @@
                 <div class="col-md-5 col-lg-6 order-md-1 text-center text-md-end"><img class="img-fluid"
                         src="../assets/img/women2.png" width="350" alt="" /></div>
                 <div class="col-md-7 col-lg-6 text-center text-md-start pt-2">
-                    {{-- <div class="pb-3"><a class="btn btn-lg text-white rounded-pill hover-top" href="/"
-                            role="button"
-                            style="background-image: linear-gradient(to right, #07441e, #199472);">Beranda</a></div> --}}
                     <h1 class="mb-4 display-3 fw-bold lh-sm">Cari Tanaman Obat<br
                             class="d-block d-lg-none d-xl-block" />Kalimantan Timur</h1>
                     <p class="mt-3 mb-4 fs-1">Selamat datang di Tanaman Obat Kalimantan Timur. <br

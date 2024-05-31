@@ -89,7 +89,7 @@
           <footer class="footer">
             <div class="container">
               <div class="row align-items-center flex-row-reverse">
-                <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">© 2024 - IT Development @Taboti - All Rights Reserved.</div>
+                <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">© 2024 - IT Development @Tobati - All Rights Reserved.</div>
               </div>
             </div>
           </footer>

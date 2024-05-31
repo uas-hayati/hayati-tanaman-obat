@@ -23,7 +23,7 @@
                     </div>
                 @endif
 
-                <div class="row row-cards">
+                <div class="row row-cards text-justify">
                     @foreach ($tumbuhan as $item)
                     <div class="col-sm-6 col-lg-4">
                       <div class="card p-3">
@@ -32,11 +32,11 @@
                         </div>
                         <div class="d-flex align-items-center px-2">
                           <div>
-                            <h4>{{$item->nama}}</></h4>
+                            <h4 class="pt-3">{{$item->nama}}</></h4>
                             <div><strong>Nama Latin: </strong> {{$item->nama_latin}}</div>
-                            <div><strong>Famili: </strong> {{$item->nama_latin}}</div>
-                            <div><strong>Manfaat: </strong> {{$item->nama_latin}}</div>
-                            <div class="pb-2"><strong>Deskripsi:</strong><br> {{$item->nama_latin}}</div>
+                            <div><strong>Famili: </strong> {{$item->famili}}</div>
+                            <div><strong>Manfaat: </strong> {{$item->kegunaan}}</div>
+                            <div class="pb-2"><strong>Deskripsi:</strong><br> {{$item->deskripsi}}</div>
                             <small class="d-block text-muted pb-2">Dibuat Pada: {{$item->created_at}}</small>
                           </div>
                         </div>
