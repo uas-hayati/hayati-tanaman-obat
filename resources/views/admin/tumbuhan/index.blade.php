@@ -34,9 +34,9 @@
                           <div>
                             <h4>{{$item->nama}}</></h4>
                             <div><strong>Nama Latin: </strong> {{$item->nama_latin}}</div>
-                            <div><strong>Famili: </strong> {{$item->nama_latin}}</div>
-                            <div><strong>Manfaat: </strong> {{$item->nama_latin}}</div>
-                            <div class="pb-2"><strong>Deskripsi:</strong><br> {{$item->nama_latin}}</div>
+                            <div><strong>Famili: </strong> {{$item->famili}}</div>
+                            <div><strong>Manfaat: </strong> {{$item->kegunaan}}</div>
+                            <div class="pb-2"><strong>Deskripsi:</strong><br> {{$item->deskripsi}}</div>
                             <small class="d-block text-muted pb-2">Dibuat Pada: {{$item->created_at}}</small>
                           </div>
                         </div>
